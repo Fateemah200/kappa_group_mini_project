@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat;400,800');
+*{
+	box-sizing:border-box; 
+}
+body{
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	background: #f6f5f7;
+	font-family: 'Montserrat', sans-serif;
+	min-height: 100%;
+	margin: 10%;
+}
+.container{
+	position: relative;
+	width: 768px;
+	max-width: 100%;
+	min-height: 480px;
+	background: #fff;
+	border-radius: 10px;
+	overflow: hidden;
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25),
+	            0 10px 10px rgba(0,0,0,0.22);
+}
+.sign-in{
+	position: absolute;
+	margin-top: 80px;
+	left: 0;
+	height: 100%;
+	transition: all 0.6s ease-in-out;
+    width: 50%;
+	z-index: 2;
+}
+.sign-in h1{
+    color:  #07772c;
+}
+
+form{
+	background: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding:0 50px;
+	text-align: center;
+}
+h1{
+	font-weight: bold;
+	top: 50%;
+    color:#fff;
+}
+p{
+	font-size: 14px;
+	font-weight: 100;
+	line-height: 20px;
+	letter-spacing: 0.5px;
+	margin: 15px 0 20px;
+}
+input{
+	background: #fff;
+	padding: 12px 15px;
+	margin: 8px 15px;
+	width: 100%;
+	border-radius: 5px;
+	border:none;
+	outline: none;
+}
+a{
+	color:  #07772c;;
+	font-size: 14px;
+	text-decoration: none;
+	margin: 15px 0;
+}
+button{
+	color: #fff;
+	background:  #07772c;;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 55px;
+	margin: 20px;
+	border-radius: 20px;
+	border:1px solid #fff;
+	outline: none;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
+}
+button:active{
+	transform: scale(0.90);
+}
+
+.container.right-panel-active .sign-in{
+	transform: translateX(100%);
+}
+.overlay-container{
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 50%;
+	height: 100%;
+	overflow: hidden;
+	transition: transform 0.6s ease-in-out;
+	z-index: 100;
+}
+.container.right-panel-active .overlay-container{
+	transform: translateX(-100%);
+}
+.overlay{
+	position: relative;
+	color: #fff;
+	background: #41f191;
+	left: -100%;
+	height: 100%;
+	width: 200%;
+	background: linear-gradient(to right, #052e05, #7af8ab);
+	transform: translateX(0);
+	transition: transform 0.6s ease-in-out;
+}
+.container.right-panel-active .overlay{
+	transform: translateX(50%);
+}
+.overlay-right{
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 40px;
+	text-align: center;
+	top: 0;
+	height: 100%;
+	width: 50%;
+	transform: translateX(0);
+	transition: transform 0.6s ease-in-out;
+}
+.overlay-right{
+	right:0;
+	transform: translateX(0);
+}
+.container.right-panel-active .overlay-right{
+	transform: translateX(20%);
+}
