@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Coffe Management</title>
+  <title>About us</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
@@ -28,7 +28,7 @@
 </button>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-       <button><a href="#logo">LOGO</a></button>
+       <button><a href="index.php">HOME</a></button>
         <button><a href="#about">ABOUT</a></button>
         <button><a href="#contact">CONTACT</a></button><br><br>
         <button><a href="#values">VALUES</a></button>
@@ -53,7 +53,7 @@
 <!-- Logo picture -->
 <h2>COMPANY'S LOGO</h2>
 <p><div id="logo" class="image">
-<center><img src="Coffee.jpg"align="top"width="240"height="220"></center>
+<center><img src="img/Coffee.jpg"align="top"width="240"height="220"></center>
 </div>
 </p>
 <!-- Container (About Section) -->
