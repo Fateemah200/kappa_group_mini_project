@@ -1,5 +1,5 @@
 <?php
-$dsn ='mysql:host=localhost;dbname=zetha';
+$dsn ='mysql:host=localhost;dbname=crms';
 $username ='root';
 $password ='';
 
