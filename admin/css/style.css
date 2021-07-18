@@ -132,3 +132,18 @@ width: 100%;
  .wrapper .form-group input[type="checkbox"]{
      float: right;
  }
+
+ .wrapper .pay{
+width: 100%;
+ }
+ .wrapper .form-group{
+     width: 100%;
+ }
+ .wrapper  input{
+     width: 100%;
+     outline: none;
+ }
+ .wrapper .form-group .btn{
+     width: 100%;
+     margin-top: 30px;
+ }
