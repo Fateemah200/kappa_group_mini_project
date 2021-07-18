@@ -1,13 +1,13 @@
 <?php
-$dsn ='mysql:host=localhost;dbname=crms';
-$username ='root';
-$password ='';
 
+define('DB_USERNAME', 'root');
+define('DB_PASSWORD', '');
+define('DB_NAME', 'kappa_group');
+ 
 try{
-$db =new PDO($dsn, $username, $password);
+    $pdo = new PDO("mysql:host=localhost; dbname=" . DB_NAME, DB_USERNAME, DB_PASSWORD);
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch(PDOException $e){
+    die("ERROR: Could not connect. " . $e->getMessage());
 }
-catch(PDOException $e){
-    $error_message = $e->getMessage();
-}
-
 ?>
