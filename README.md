@@ -6,3 +6,4 @@
 6. sunday ezekiel paul fcp/cit/18/1008
 7. hashim hashim habib fcp/ccs/18/1015
 8.Fatima Aminu musa fcp/csc/18/1085
+9. Habibu Haruna Ya'u FCP/CCS/18/1001
