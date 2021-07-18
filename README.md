@@ -3,4 +3,5 @@
 (3). KABEER ISAH. FCP/CSC/18/1088
 (4). MUAZU USMAN IBRAHIM FCP/CIT/18/1032
 5. Auna Mohammed fcp/csc/19/2009
-6. 6. sunday ezekiel paul fcp/cit/18/1008
+6. sunday ezekiel paul fcp/cit/18/1008
+7. hashim hashim habib fcp/ccs/18/1015
