@@ -7,3 +7,4 @@
 7. hashim hashim habib fcp/ccs/18/1015
 8.Fatima Aminu musa fcp/csc/18/1085
 9. Habibu Haruna Ya'u FCP/CCS/18/1001
+10. DAUDA AYUBA YARIMA FCP/CSC/19/2005
