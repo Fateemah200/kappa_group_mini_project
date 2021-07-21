@@ -1,3 +1,31 @@
+<?php
+include "connection/connection.php";
+
+if(isset($_GET['submit'])){
+$fullname = $_GET['name'];
+$comment = $_GET['comment'];
+
+
+$sql = "INSERT INTO blog (fullname, comment) VALUES (:fullname, :comment)";
+if($stmt = $db->prepare($sql)){
+            
+            $stmt->bindParam(":fullname", $fullname);
+            $stmt->bindParam(":comment", $comment);
+            
+
+    if($stmt->execute()){
+                
+                echo "your comment was send successfully";;
+                exit();
+            } else{
+                echo "Oops! Something went wrong. Please try again later.";
+            }
+}
+}
+
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -109,6 +137,14 @@
     </div>
   </div>
 </div>
+     <div id="blog">
+  <form method="get" action="about.php">
+    <input type="text" name="name" placeholder="your name">
+    <br>
+    <input type="text" name="comment" placeholder="your comment">
+    <br>
+    <input type="submit" name="submit" value="send">
+  </form>
 <!-- Container (Contact Section) -->
 <div id="contact" class="container-fluid bg-grey">
   <h2 class="text-center">CONTACT</h2>
