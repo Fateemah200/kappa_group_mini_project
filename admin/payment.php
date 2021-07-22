@@ -1,3 +1,6 @@
+<?php
+include "connection/connection.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -44,9 +47,9 @@
                   <div class="row">
                     <div class="col-md-6">
                       <h3 class="card-header" style="text-align: center">Payment Details</h3>
-                      <form action="payment.php" method="">
+                      <form action="savepay.php" method="get">
                         <div class="form-group">
-                        <input type="txt" name="name_card" placeholder="Name on the card">
+                        <input type="txt" name="card_name" placeholder="Name on the card">
                         </div>
                         <div class="form-group">
                         <input type="txt" name="cardno" placeholder="Number on the card">
@@ -65,7 +68,8 @@
                           <div class="card-header">
                             <h3>Post news</h3>
                             <div>
-                                <form>
+                            
+                                <form action="post.php" method="get">
                                   <div class="card-body">
                                   <div class="form-group">
                       <input type="txt" name="title" placeholder="story title">
